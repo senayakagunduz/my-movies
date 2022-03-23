@@ -1,9 +1,5 @@
 import React from "react";
 
-// function handleClick(event) {
-//   console.log("button clicked");
-// }
-
 const MovieList = (props) => {
   return (
     <div className="row">
@@ -23,12 +19,14 @@ const MovieList = (props) => {
                   <button
                     type="button"
                     onClick={(event) => props.deleteMovieProp(movie)}
-                    className="btn btn-md btn-outline-danger"
+                    className="btn btn-outline-danger"
                   >
                     Delete
                   </button>
                   <h2>
-                    <span className="badge badge-info">{movie.rating}</span>
+                    <span className="badge rounded-pill bg-primary">
+                      {movie.rating}
+                    </span>
                   </h2>
                 </div>
               </div>
